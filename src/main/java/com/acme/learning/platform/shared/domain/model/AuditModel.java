@@ -44,4 +44,5 @@ public abstract class AuditModel {
     @Column(name="updated_at",nullable = false)
     @LastModifiedDate
     private Date updatedAt;
+
 }
