@@ -1,3 +1,5 @@
+//PROCESO DE MAPPER ENTRE RESOURCE Y ENTITY
+
 package com.acme.learning.platform.learning.mapping;
 
 import com.acme.learning.platform.learning.domain.model.Student;
@@ -5,6 +7,7 @@ import com.acme.learning.platform.learning.resource.CreateStudentResource;
 import com.acme.learning.platform.learning.resource.StudentResource;
 import com.acme.learning.platform.learning.resource.UpdateStudentResource;
 import com.acme.learning.platform.shared.mapping.EnhancedModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -14,11 +17,8 @@ import java.util.List;
 
 public class StudentMapper implements Serializable {
 
+    @Autowired //con esto puede hacer inyeccion de dependencias
     private EnhancedModelMapper mapper;
-
-    public StudentMapper(EnhancedModelMapper mapper){
-        this.mapper=mapper;
-    }
 
     public StudentResource toResource(Student model){
 

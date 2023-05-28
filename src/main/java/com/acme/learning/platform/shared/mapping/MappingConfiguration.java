@@ -6,7 +6,8 @@ package com.acme.learning.platform.shared.mapping;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration("enhancedModelMapperConfiguration")
+             //nombredelboundedcontext_nombredelaclase
+@Configuration("enhancedModelMapperConfiguration") //sirve para diferenciarse de la clase que esta en Learning
 public class MappingConfiguration {
 
     @Bean
