@@ -2,6 +2,8 @@
 //aplicar una convencion de "get" para service
 // y "find" para repository
 
+//la logica de esto se ha de encontrar en la carpeta de "service" de "learnign"
+//por el principio de separacion de interfaz de implementacion
 package com.acme.learning.platform.learning.domain.service;
 
 import com.acme.learning.platform.learning.domain.model.Student;
