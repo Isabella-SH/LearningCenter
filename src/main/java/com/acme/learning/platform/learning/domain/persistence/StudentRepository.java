@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface StudentRepository extends JpaRepository<Student,long> {
+public interface StudentRepository extends JpaRepository<Student,Long> {
 
     //realizo las consultas con los atributos que quiero
 
