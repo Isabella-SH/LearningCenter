@@ -17,7 +17,8 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-
+@Getter
+@Setter
 //crea una tabla de esta entidad, siempre incluir el id dentro
 //pero ello lo señalaremos mas abajo
 @Table(name="skills")//fuerzo el "name", para respetar las convenciones, el nombre de las tablas son en plural
@@ -75,22 +76,6 @@ public class Skill extends AuditModel {
 
         return this;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
